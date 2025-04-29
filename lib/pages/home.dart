@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:first_project/pages/booking.dart';
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -71,52 +71,62 @@ class _HomeState extends State<Home> {
               children: [
               Flexible(
                 fit: FlexFit.tight,
-                  child: Container(
-                    height:130,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Color(0xffe29452),
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.asset("images/shaving.png",height:80, width: 80,fit:BoxFit.cover),
-                        SizedBox(height: 10.0,),
-                        Text(
-                          "Classic Shave",
-                          style: TextStyle(
-                            fontSize: 18.0,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w500,
+                  child: GestureDetector(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Booking(service:"Classic Shave ") ));
+                    },
+                    child: Container(
+                      height:130,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Color(0xffe29452),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset("images/shaving.png",height:80, width: 80,fit:BoxFit.cover),
+                          SizedBox(height: 10.0,),
+                          Text(
+                            "Classic Shave",
+                            style: TextStyle(
+                              fontSize: 18.0,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ),
                 SizedBox(width: 20.0,),
                 Flexible(
                   fit: FlexFit.tight,
-                  child: Container(
-                    height:130,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Color(0xffe29452),
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.asset("images/hair.png", height:80, width: 80,fit:BoxFit.cover),
-                        SizedBox(height: 10.0,),
-                        Text(
-                          "Hair Washing",
-                          style: TextStyle(
-                            fontSize: 18.0,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w500,
+                  child: GestureDetector(
+                    onTap: (){
+                       Navigator.push(context, MaterialPageRoute(builder: (context)=>Booking(service:"Hair Washing") ));
+                    },
+                    child: Container(
+                      height:130,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Color(0xffe29452),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset("images/hair.png", height:80, width: 80,fit:BoxFit.cover),
+                          SizedBox(height: 10.0,),
+                          Text(
+                            "Hair Washing",
+                            style: TextStyle(
+                              fontSize: 18.0,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ),

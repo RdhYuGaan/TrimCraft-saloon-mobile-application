@@ -32,6 +32,7 @@ class _OnboardingState extends State<Onboarding> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              
             ),
           ],
         ),

@@ -1,4 +1,6 @@
+import 'package:first_project/pages/booking.dart';
 import 'package:first_project/pages/home.dart';
+// import 'package:first_project/pages/home.dart';
 // import 'package:first_project/pages/onboarding.dart';
 import 'package:flutter/material.dart';
 // import 'package:first_project/mainPage.dart'; // make sure this path is correct

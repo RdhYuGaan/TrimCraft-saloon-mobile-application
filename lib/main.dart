@@ -1,4 +1,5 @@
-import 'package:first_project/pages/onboarding.dart';
+import 'package:first_project/pages/home.dart';
+// import 'package:first_project/pages/onboarding.dart';
 import 'package:flutter/material.dart';
 // import 'package:first_project/mainPage.dart'; // make sure this path is correct
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
         useMaterial3: true,
       ),
-      home: const Onboarding(),
+      home: const Home(),
     );
   }
 }

@@ -1,5 +1,6 @@
+import 'package:first_project/pages/onboarding.dart';
 import 'package:flutter/material.dart';
-import 'package:first_project/mainPage.dart'; // make sure this path is correct
+// import 'package:first_project/mainPage.dart'; // make sure this path is correct
 
 void main() {
   runApp(const MyApp());
@@ -12,11 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
         useMaterial3: true,
       ),
-      home: const MainPage(),
+      home: const Onboarding(),
     );
   }
 }

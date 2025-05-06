@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:first_project/pages/booking.dart';
+
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -69,14 +70,20 @@ class _HomeState extends State<Home> {
             SizedBox(height: 20.0),
             Row(
               children: [
-              Flexible(
-                fit: FlexFit.tight,
+                Flexible(
+                  fit: FlexFit.tight,
                   child: GestureDetector(
-                    onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Booking(service:"Classic Shave ") ));
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder:
+                              (context) => Booking(service: "Classic Shave "),
+                        ),
+                      );
                     },
                     child: Container(
-                      height:130,
+                      height: 130,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Color(0xffe29452),
@@ -84,8 +91,13 @@ class _HomeState extends State<Home> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Image.asset("images/shaving.png",height:80, width: 80,fit:BoxFit.cover),
-                          SizedBox(height: 10.0,),
+                          Image.asset(
+                            "images/shaving.png",
+                            height: 80,
+                            width: 80,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(height: 10.0),
                           Text(
                             "Classic Shave",
                             style: TextStyle(
@@ -99,15 +111,21 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                 ),
-                SizedBox(width: 20.0,),
+                SizedBox(width: 20.0),
                 Flexible(
                   fit: FlexFit.tight,
                   child: GestureDetector(
-                    onTap: (){
-                       Navigator.push(context, MaterialPageRoute(builder: (context)=>Booking(service:"Hair Washing") ));
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder:
+                              (context) => Booking(service: "Hair Washing"),
+                        ),
+                      );
                     },
                     child: Container(
-                      height:130,
+                      height: 130,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Color(0xffe29452),
@@ -115,8 +133,13 @@ class _HomeState extends State<Home> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Image.asset("images/hair.png", height:80, width: 80,fit:BoxFit.cover),
-                          SizedBox(height: 10.0,),
+                          Image.asset(
+                            "images/hair.png",
+                            height: 80,
+                            width: 80,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(height: 10.0),
                           Text(
                             "Hair Washing",
                             style: TextStyle(
@@ -135,54 +158,87 @@ class _HomeState extends State<Home> {
             SizedBox(height: 20.0),
             Row(
               children: [
-              Flexible(
-                fit: FlexFit.tight,
-                  child: Container(
-                    height:130,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Color(0xffe29452),
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.asset("images/cutting.png",height:80, width: 80,fit:BoxFit.cover),
-                        SizedBox(height: 10.0,),
-                        Text(
-                          "Hair Cutting",
-                          style: TextStyle(
-                            fontSize: 18.0,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w500,
-                          ),
+                Flexible(
+                  fit: FlexFit.tight,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder:
+                              (context) => Booking(service: "Hair Cutting"),
                         ),
-                      ],
+                      );
+                    },
+
+                    child: Container(
+                      height: 130,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Color(0xffe29452),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "images/cutting.png",
+                            height: 80,
+                            width: 80,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(height: 10.0),
+                          Text(
+                            "Hair Cutting",
+                            style: TextStyle(
+                              fontSize: 18.0,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
-                SizedBox(width: 20.0,),
+                SizedBox(width: 20.0),
                 Flexible(
                   fit: FlexFit.tight,
-                  child: Container(
-                    height:130,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Color(0xffe29452),
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.asset("images/beard.png", height:80, width: 80,fit:BoxFit.cover),
-                        SizedBox(height: 10.0,),
-                        Text(
-                          "Beard Trimming",
-                          style: TextStyle(
-                            fontSize: 18.0,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w500,
-                          ),
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder:
+                              (context) => Booking(service: "Beard Trimming"),
                         ),
-                      ],
+                      );
+                    },
+                    child: Container(
+                      height: 130,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Color(0xffe29452),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "images/beard.png",
+                            height: 80,
+                            width: 80,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(height: 10.0),
+                          Text(
+                            "Beard Trimming",
+                            style: TextStyle(
+                              fontSize: 18.0,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
@@ -191,54 +247,86 @@ class _HomeState extends State<Home> {
             SizedBox(height: 20.0),
             Row(
               children: [
-              Flexible(
-                fit: FlexFit.tight,
-                  child: Container(
-                    height:130,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Color(0xffe29452),
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.asset("images/facials.png",height:80, width: 80,fit:BoxFit.cover),
-                        SizedBox(height: 10.0,),
-                        Text(
-                          "Facials",
-                          style: TextStyle(
-                            fontSize: 18.0,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w500,
-                          ),
+                Flexible(
+                  fit: FlexFit.tight,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Booking(service: "Facials"),
                         ),
-                      ],
+                      );
+                    },
+                    child: Container(
+                      height: 130,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Color(0xffe29452),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "images/facials.png",
+                            height: 80,
+                            width: 80,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(height: 10.0),
+                          Text(
+                            "Facials",
+                            style: TextStyle(
+                              fontSize: 18.0,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
-                SizedBox(width: 20.0,),
+                SizedBox(width: 20.0),
                 Flexible(
                   fit: FlexFit.tight,
-                  child: Container(
-                    height:130,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Color(0xffe29452),
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.asset("images/kids.png", height:80, width: 80,fit:BoxFit.cover),
-                        SizedBox(height: 10.0,),
-                        Text(
-                          "Kids Hair Cutting",
-                          style: TextStyle(
-                            fontSize: 18.0,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w500,
-                          ),
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder:
+                              (context) =>
+                                  Booking(service: "Kids Hair Cutting"),
                         ),
-                      ],
+                      );
+                    },
+                    child: Container(
+                      height: 130,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Color(0xffe29452),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "images/kids.png",
+                            height: 80,
+                            width: 80,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(height: 10.0),
+                          Text(
+                            "Kids Hair Cutting",
+                            style: TextStyle(
+                              fontSize: 18.0,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
